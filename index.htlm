@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Football Flash</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="."><span class="brand-mark">⚽</span><span>FOOTBALL<br><strong>FLASH</strong></span></a><div class="live-pill"><span></span> Sources Wikipedia</div></header>
+    <section class="hero"><p class="eyebrow">Le quiz qui joue le jeu</p><h1>Ton prochain<br><em>but</em> est une bonne réponse.</h1><p class="intro">Teste tes connaissances sur les légendes du football. Chaque question est documentée par une fiche Wikipedia.</p></section>
+    <section class="game-card" aria-live="polite"><div class="game-head"><div><span class="label">QUESTION</span><span id="question-number">01 / 05</span></div><div class="score-box"><span>SCORE</span><strong id="score">0</strong></div></div><div class="progress"><span id="progress-bar"></span></div><div id="loading" class="state">Chargement des sources<span class="dots">...</span></div><div id="quiz" hidden><div class="category" id="category">LÉGENDE</div><h2 id="question">Question...</h2><div class="answers" id="answers"></div><div class="question-foot"><span id="streak">Série : 0</span><a id="source-link" href="#" target="_blank" rel="noreferrer">Voir la source ↗</a></div></div><div id="result" class="result" hidden><div class="result-ball">🏆</div><p class="eyebrow">Coup de sifflet final</p><h2><span id="final-score">0</span> / 5</h2><p id="result-message"></p><button id="restart" class="primary">Rejouer <span>↻</span></button></div></section>
+    <footer><span>Faits vérifiés en ligne</span><span>•</span><span>À toi de jouer</span></footer>
+  </main><script src="app.js"></script>
+</body>
+</html>
